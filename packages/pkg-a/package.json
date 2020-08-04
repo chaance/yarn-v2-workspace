@@ -1,0 +1,29 @@
+{
+	"name": "pkg-a",
+	"version": "0.1.0",
+	"description": "Litora dictum ut sed arcu elementum.",
+	"license": "MIT",
+	"author": "Chance Strickland <hi@chancedigital.io>",
+	"files": [
+		"README.md",
+		"dist"
+	],
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"clean": "rimraf dist",
+		"compile": "tsc --pretty --project tsconfig.build.json && rimraf dist/types.js",
+		"build": "yarn clean && yarn compile",
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
+		"test": "jest --coverage",
+		"test:watch": "jest --watch",
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"rimraf": "^3.0.2",
+		"typescript": "^3.9.7"
+	},
+	"dependencies": {
+		"tslib": "^2.0.0"
+	}
+}

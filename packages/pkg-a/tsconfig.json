@@ -1,0 +1,12 @@
+{
+	"extends": "../../tsconfig.json",
+	"include": ["src", "scripts", "types", "../../types"],
+	"compilerOptions": {
+		"baseUrl": "src",
+		"rootDir": "src",
+		"outDir": "dist",
+		"noEmit": false,
+		"declaration": true,
+		"inlineSourceMap": true
+	}
+}

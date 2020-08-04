@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"allowJs": false,
+		"baseUrl": ".",
+		"esModuleInterop": true,
+		"experimentalDecorators": false,
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"isolatedModules": true,
+		"moduleResolution": "node",
+		"noEmit": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "es5",
+		"typeRoots": ["./node_modules/@types", "./types"],
+		"paths": {
+			"pkg-a": ["packages/pkg-a/src"],
+			"pkg-b": ["packages/pkg-b/src"],
+			"*": ["node_modules/*"]
+		}
+	}
+}
